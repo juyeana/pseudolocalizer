@@ -108,3 +108,4 @@ const pseudoLocalizer = async (url, options) => {
   }
 };
 
+module.exports = pseudoLocalizer;
