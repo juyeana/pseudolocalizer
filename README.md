@@ -61,6 +61,6 @@
     text direction: ltr | rtl
 
 ### Note
-Chromium is currently used as a default browser, and no option to choose different browsers is available at this point. The default size of the browser viewport is 800 x 600. To change the viewport in full view mode, open up browser DevTools and click on the Toggle device toolbar: shortcut for windows Ctrl+Shift+J and then Ctrl+Shift+M twice. 
+Chromium is used as a default browser. The default size of the browser viewport is 800 x 600. To change the viewport in full view mode, open up browser DevTools and click on the Toggle device toolbar: shortcut for windows Ctrl+Shift+J and then Ctrl+Shift+M twice. 
 
 
