@@ -1,6 +1,8 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 
+// require('./chars.json')
 /**
  * @desc takes url and options to test website localizability
  * @param{string} url
@@ -32,9 +34,14 @@ const pseudoLocalizer = async (url, options) => {
       });
     });
 
+    // get chars.json file path
+    await page.exposeFunction('getPath', (fileName) =>
+      path.join(__dirname, fileName)
+    );
     await page.evaluate(
       async (prefix, suffix, expansion, bidi) => {
-        const chars = await window.readChars('./chars.json');
+        const filePath = await window.getPath('chars.json');
+        const chars = await window.readChars(filePath);
         const charLookup = JSON.parse(chars);
 
         convertText(document.body);
