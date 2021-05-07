@@ -1,6 +1,6 @@
 {
   "name": "web-pseudo-localizer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "It provides the ability to scrap your website and converts all texts to pseudo-localized characters to test localizability.",
   "main": "index.js",
   "dependencies": {
@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/juyeana/web-pseudo-localizer#readme",
   "files": [
-    "chars.json"
+    "/chars.json"
   ]
 }

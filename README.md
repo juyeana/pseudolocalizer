@@ -9,6 +9,7 @@
 ![Sample web page](https://firebasestorage.googleapis.com/v0/b/portfolio-220f7.appspot.com/o/images%2Fpseudolocalized_md.png?alt=media&token=6b62c82d-57dc-47ff-9dab-879673d0457a)
 
 ## Install
+
 > npm i web-pseudo-localizer
 
 ## Usage
