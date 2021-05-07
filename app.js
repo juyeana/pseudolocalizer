@@ -4,17 +4,17 @@ const fs = require('fs');
 /**
  * @desc takes url and options to test website localizability
  * @param{string} url
- * @param {object} options : prefix, suffix, space, bidi
+ * @param {object} options : prefix, suffix, expansion, bidi
  */
 const pseudoLocalizer = async (url, options) => {
-  let prefix, suffix, space, bidi;
+  let prefix, suffix, expansion, bidi;
 
   try {
     if (options) {
       prefix = options.prefix || '[';
       suffix = options.suffix || ']';
-      space = options.space || 1;
-      bidi = options.bidi || 'ltr';
+      expansion = options.expansion || 1;
+      bidi = options.bidi.toLowerCase() || 'ltr';
     }
 
     const browser = await puppeteer.launch({ headless: false });
@@ -33,7 +33,7 @@ const pseudoLocalizer = async (url, options) => {
     });
 
     await page.evaluate(
-      async (prefix, suffix, space, bidi) => {
+      async (prefix, suffix, expansion, bidi) => {
         const chars = await window.readChars('./chars.json');
         const charLookup = JSON.parse(chars);
 
@@ -54,7 +54,7 @@ const pseudoLocalizer = async (url, options) => {
 
             if (st) {
               // replacing chacters with pseudo characters
-              st = replaceStrings(st, space);
+              st = replaceStrings(st, expansion);
 
               // add prefix and suffix
               // default value: prefix ='[' suffix=']'
@@ -100,7 +100,7 @@ const pseudoLocalizer = async (url, options) => {
       },
       prefix,
       suffix,
-      space,
+      expansion,
       bidi
     );
   } catch (e) {
@@ -112,8 +112,8 @@ const pseudoLocalizer = async (url, options) => {
 let options = {
   prefix: '[',
   suffix: ']',
-  space: 1,
+  expansion: 1,
   bidi: 'rtl',
 };
 
-// pseudoLocalizer('https://en.wikipedia.org/wiki/Main_Page', options);
+pseudoLocalizer('http://localhost:3000/', options);
