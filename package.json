@@ -1,6 +1,6 @@
 {
   "name": "web-pseudo-localizer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "It provides the ability to scrap your website and converts all texts to pseudo-localized characters to test localizability.",
   "main": "index.js",
   "dependencies": {
