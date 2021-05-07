@@ -108,12 +108,3 @@ const pseudoLocalizer = async (url, options) => {
   }
 };
 
-// example
-let options = {
-  prefix: '[',
-  suffix: ']',
-  expansion: 1,
-  bidi: 'rtl',
-};
-
-pseudoLocalizer('http://localhost:3000/', options);
