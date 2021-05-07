@@ -1,11 +1,12 @@
 # web-pseudo-localizer 
+
 > **to test your website's localizability**
 
 #### web-pseudo-localizer provides the ability to scrap web pages and converts all texts to pseudo-localized characters to test your website's localizability.
 
 <hr>
 
-   <sample screenshot of testing a website with text direction 'RTL'>
+<sample screenshot of testing a website with text direction 'RTL'>
 ![Sample web page](https://firebasestorage.googleapis.com/v0/b/portfolio-220f7.appspot.com/o/images%2Fpseudolocalized_md.png?alt=media&token=6b62c82d-57dc-47ff-9dab-879673d0457a)
 
 ## Install
@@ -26,8 +27,8 @@
     let options = {
       prefix: '[',
       suffix: ']',
-      expansion: 30,
-      bidi: 'rtl',
+      expansion: 10,
+      bidi: 'ltr',
     }
     pseudoLocalizer('http://example.com', options);
 
