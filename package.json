@@ -1,5 +1,5 @@
 {
-  "name": "pseudolocalizer",
+  "name": "web-pseudo-localizer",
   "version": "1.0.0",
   "description": "It provides the ability to scrap your website and converts all texts to pseudo-localized characters to test localizability.",
   "main": "app.js",
@@ -12,13 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juyeana/pseudolocalizer.git"
+    "url": "git+https://github.com/juyeana/web-pseudo-localizer.git"
   },
   "keywords": [
     "localization",
     "localizability",
     "pseudolocalization",
+    "pseudo-localization",
     "pseudolocalizer",
+    "pseudo-localizer",
     "internalization",
     "i18n",
     "l10n"
@@ -26,7 +28,7 @@
   "author": "Juyean Lee",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/juyeana/pseudo-localizer/issues"
+    "url": "https://github.com/juyeana/web-pseudo-localizer/issues"
   },
-  "homepage": "https://github.com/juyeana/pseudo-localizer#readme"
+  "homepage": "https://github.com/juyeana/web-pseudo-localizer#readme"
 }

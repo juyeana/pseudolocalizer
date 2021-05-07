@@ -1,7 +1,7 @@
-# pseudolocalizer 
+# web-pseudo-localizer 
 > **to test your website's localizability**
 
-#### pseudolocalizer provides the ability to scrap web pages and converts all texts to pseudo-localized characters to test your website's localizability.
+#### web-pseudo-localizer provides the ability to scrap web pages and converts all texts to pseudo-localized characters to test your website's localizability.
 
 <hr>
 
@@ -9,12 +9,12 @@
 ![Sample web page](https://firebasestorage.googleapis.com/v0/b/portfolio-220f7.appspot.com/o/images%2Fpseudolocalized_md.png?alt=media&token=6b62c82d-57dc-47ff-9dab-879673d0457a)
 
 ## Install
-> npm i pseudolocalizer
+> npm i web-pseudo-localizer
 
 ## Usage
-    const pseudolocalizer = require('pseudolocalizer')
+    const pseudoLocalizer = require('web-pseudo-localizer')
 
-    pseudolocalizer('http://example.com', {
+    pseudoLocalizer('http://example.com', {
       prefix: '[',
       suffix: ']',
       expansion: 30,
@@ -28,7 +28,7 @@
       expansion: 30,
       bidi: 'rtl',
     }
-    pseudolocalizer('http://example.com', options);
+    pseudoLocalizer('http://example.com', options);
 
 ## API
 
