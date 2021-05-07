@@ -1,7 +1,7 @@
 {
   "name": "web-pseudo-localizer",
-  "version": "1.0.5",
-  "description": "It provides the ability to scrap your website and converts all texts to pseudo-localized characters to test localizability.",
+  "version": "1.0.6",
+  "description": "It provides the ability to scrape your website and converts all texts to pseudo-localized characters to test localizability.",
   "main": "index.js",
   "dependencies": {
     "path": "^0.12.7",
@@ -20,7 +20,6 @@
     "localizability",
     "pseudolocalization",
     "pseudo-localization",
-    "pseudolocalizer",
     "internationalization",
     "i18n",
     "l10n"

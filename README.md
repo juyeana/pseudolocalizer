@@ -2,7 +2,7 @@
 
 > **to test your website's localizability**
 
-#### web-pseudo-localizer provides the ability to scrap web pages and converts all texts to pseudo-localized characters to test your website's localizability.
+#### web-pseudo-localizer provides the ability to scrape web pages and converts all texts to pseudo-localized characters to test your website's localizability.
 
 <hr>
 
