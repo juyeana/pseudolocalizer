@@ -59,7 +59,7 @@
 *bidi*
 
     type: string
-    default: 'rtl'
+    default: 'ltr'
     text direction: ltr | rtl
 
 ### Note
