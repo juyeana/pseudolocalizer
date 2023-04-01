@@ -2,11 +2,11 @@
 
 > **to test your website's localizability**
 
-#### web-pseudo-localizer provides the ability to scrape web pages and converts all texts to pseudo-localized characters to test your website's localizability.
+#### web-pseudo-localizer provides the ability to scrape web pages and convert any text to pseudo-localized characters to test your website's localizability.
 
 <hr>
 
-<sample screenshot of testing a website with text direction 'RTL'>
+<sample screenshot of a website with text direction 'RTL'>
 ![Sample web page](https://firebasestorage.googleapis.com/v0/b/portfolio-220f7.appspot.com/o/images%2Fpseudolocalized_md.png?alt=media&token=6b62c82d-57dc-47ff-9dab-879673d0457a)
 
 ## Install
@@ -23,7 +23,10 @@
       bidi: 'rtl',
     });
     
+    ------------------------- OR -------------------------------
     
+    const pseudoLocalizer = require('web-pseudo-localizer')
+
     let options = {
       prefix: '[',
       suffix: ']',
@@ -49,12 +52,11 @@
     type:string
     default: ']'
 
-*expansion*
+*expansion* (It provides extra white space to test strings in the target language that take up more space than the source language.)
 
     type:number
     default: 1
     unit: %
-    give extra white space to string to check your website for text expansion
 
 *bidi*
 
@@ -63,6 +65,6 @@
     text direction: ltr | rtl
 
 ### Note
-Chromium is used as a default browser. The default size of the browser viewport is 800 x 600. To change the viewport in full view mode, open up browser DevTools and click on the Toggle device toolbar: shortcut for windows Ctrl+Shift+J and then Ctrl+Shift+M twice. 
+Chromium is used as the default browser. The default size of the browser viewport is 800 x 600. To change the viewport in full view mode, open your browser DevTools and click the Toggle device toolbar: the shortcut for windows Ctrl+Shift+J and then Ctrl+Shift+M twice. 
 
 
