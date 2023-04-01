@@ -9,14 +9,17 @@ const path = require('path');
  * @param {object} options : prefix, suffix, expansion, bidi
  */
 const pseudoLocalizer = async (url, options) => {
-  let prefix, suffix, expansion, bidi;
+  let prefix = '[',
+    suffix = ']',
+    expansion = 1,
+    bidi = 'ltr';
 
   try {
     if (options) {
-      prefix = options.prefix || '[';
-      suffix = options.suffix || ']';
-      expansion = options.expansion || 1;
-      bidi = options.bidi.toLowerCase() || 'ltr';
+      prefix = options.prefix;
+      suffix = options.suffix;
+      expansion = options.expansion;
+      bidi = options.bidi.toLowerCase();
     }
 
     const browser = await puppeteer.launch({ headless: false });
